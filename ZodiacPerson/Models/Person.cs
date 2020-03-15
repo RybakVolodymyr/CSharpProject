@@ -82,7 +82,7 @@ namespace ZodiacPerson.Models
                 int v = (DateTime.Today.DayOfYear >= value.DayOfYear ? 0 : 1);
                 var age = (DateTime.Today.Year - value.Year) - v;
                 var diff = DateTime.Today - value;
-                if (diff.Days <= 0)
+                if (diff.Days < 0)
                 {
                     throw new FutureBirthdayException(value);
                 }

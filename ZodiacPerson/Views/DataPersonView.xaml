@@ -19,17 +19,21 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="78*"/>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width="48*"/>
+            <ColumnDefinition Width="29*"/>
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Enter your data : " Margin="10" FontSize="16" FontWeight="Bold" Width="280"/>
-        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Birth date: " FontSize="14" Width="285" Margin="5,0,0,0"/>
-        <DatePicker Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="24" Margin="10,10,5,11" FontSize="14" SelectedDate="{Binding BirthDate}" Grid.ColumnSpan="2"/>
-        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="First Name : " />
-        <TextBox Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding FirstName}" />
-        <TextBlock Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Last Name : "/>
-        <TextBox Grid.Row="6" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding LastName}"/>
-        <TextBlock Grid.Row="7" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Email : "/>
-        <TextBox Grid.Row="8" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding Email}"/>
-        <Button Content="Proceed" HorizontalAlignment="Left" Margin="114,55,0,-22" Grid.Row="9" VerticalAlignment="Top" Width="75" FontSize="16" Grid.Column="0" RenderTransformOrigin="0.44,1" Command ="{Binding ProceedCommand}"/>
+        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Enter your data : " Margin="10,10,0,10" FontSize="16" FontWeight="Bold" Width="280" Grid.ColumnSpan="5"/>
+        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Birth date: " FontSize="14" Width="285" Margin="5,0,0,0" Grid.ColumnSpan="5"/>
+        <DatePicker Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="24" Margin="10,10,5,11" FontSize="14" SelectedDate="{Binding BirthDate}" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="First Name : " Grid.ColumnSpan="5" />
+        <TextBox Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding FirstName}" Grid.ColumnSpan="5" />
+        <TextBlock Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Last Name : " Grid.ColumnSpan="5"/>
+        <TextBox Grid.Row="6" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding LastName}" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="7" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="Email : " Grid.ColumnSpan="5"/>
+        <TextBox Grid.Row="8" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="5" FontSize="14" Text="{Binding Email}" Grid.ColumnSpan="5"/>
+        <Button Content="Proceed" HorizontalAlignment="Left" Margin="36,55,0,0" Grid.Row="9" VerticalAlignment="Top" Width="75" FontSize="16" Grid.Column="1" RenderTransformOrigin="0.44,1" Command ="{Binding ProceedCommand}" Grid.ColumnSpan="2"/>
     </Grid>
 </UserControl>
